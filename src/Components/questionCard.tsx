@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { questionPropsType } from './../types/quiz_types'
 
 const QuestionCard: React.FC<questionPropsType> = ({ question, options, callback }) => {
-
+/// all states must be rest on most upper side
     let [selectedAns, setSelectedAns] = useState("");
 
     const handleSelection = (ev: any) => {
