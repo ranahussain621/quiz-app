@@ -11,7 +11,7 @@ function App() {
   let [score, setScore] = useState(0)
   let [showResult, setShowResult] = useState(false)
 
-
+//// Api's Contain all types of desired data 
   useEffect(() => {
     async function fetchData() {
       const questions: QuizType[] = await getQuizDetails(5, 'easy');
